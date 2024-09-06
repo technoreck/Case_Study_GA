@@ -13,6 +13,12 @@ def divide(x, y):
     else:
         return "Error! Division by zero."
 
+def pow(x, y):
+    if y==0:
+        return 1
+    else:
+        return x**y
+
 # Example usage
 num1 = 10
 num2 = 5
@@ -21,3 +27,4 @@ print(f"{num1} + {num2} = {add(num1, num2)}")
 print(f"{num1} - {num2} = {subtract(num1, num2)}")
 print(f"{num1} * {num2} = {multiply(num1, num2)}")
 print(f"{num1} / {num2} = {divide(num1, num2)}")
+print(f"{num1} / {num2} = {pow(num1, num2)}")
